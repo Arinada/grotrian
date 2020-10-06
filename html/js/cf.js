@@ -93,12 +93,12 @@ canvas8.width = 70;
 canvas8.ctx = canvas8.getContext("2d");
 
 
-//линза
+//пїЅпїЅпїЅпїЅпїЅ
 canvas.ctx.arc(0, 50, 68, -Math.PI/4, Math.PI/4, false);
 canvas.ctx.arc(100, 50, 68, Math.PI*3/4, -Math.PI*3/4, false);
 
 
-//5угольник
+//5пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 canvas5.ctx.beginPath();
 canvas5.ctx.moveTo(35,4);
 canvas5.ctx.lineTo(65,33);
@@ -141,7 +141,7 @@ canvas8.ctx.lineTo(5, 22);
 canvas8.ctx.lineTo(24, 0);
 
 
-//отображение иинтенсивности прозрачностью
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function click_intens(){
     if(document.getElementById('intens').checked){
         fill_icon(markers, icon, colorArr);
@@ -470,11 +470,11 @@ function resize(click) {
     window.myScatter.update();
 }
 
-//переключение размерности
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 var rad = document.getElementsByName('myRadios');
 for (var i = 0; i < rad.length; i++) {
     rad[i].addEventListener('change', function() {
-        if (this.value == 1) {   //размерность cm^-1
+        if (this.value == 1) {   //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ cm^-1
             cm = true;
             ev = false;
             part2 = labelcm;
@@ -542,7 +542,7 @@ for (var i = 0; i < rad.length; i++) {
             myScatter.options.scales.yAxes[0].ticks.suggestedMax = max;
             window.myScatter.update();
         }
-        else {   //размерность evV
+        else {   //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ evV
             ev = true;
             cm = false;
             part2 = labeleV;
@@ -1081,8 +1081,8 @@ function show_selected(){
 }
 
 function show_visible(){
-    updateChart(0, 3800, 7600);
-    click_intens();
+   // updateChart(0, 3800, 7600);
+   // click_intens();
 }
 
 function show_all(){
